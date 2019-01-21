@@ -105,6 +105,7 @@ matrix:
 script:
   - echo $PWD
   - chmod g-w -R $TRAVIS_BUILD_DIR
+  - umask 022
   - mkdir test
   - touch test/blah
   - find $TRAVIS_BUILD_DIR -ls

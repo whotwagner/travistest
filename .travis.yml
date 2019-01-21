@@ -104,3 +104,4 @@ matrix:
 
 script:
   - echo $PWD
+  - find /home -ls

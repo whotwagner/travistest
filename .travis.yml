@@ -104,4 +104,5 @@ matrix:
 
 script:
   - echo $PWD
-  - find /home -ls
+  - chmod g-w -R $TRAVIS_BUILD_DIR
+  - find $TRAVIS_BUILD_DIR -ls
